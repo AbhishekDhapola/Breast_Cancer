@@ -48,7 +48,7 @@ jobs:
           ls -l
           cat Dockerfile
           docker version
-         docker info
+          docker info
 
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
