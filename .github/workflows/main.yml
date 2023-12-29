@@ -43,12 +43,7 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
-      - name: Debug Docker Build
-        run: |
-          ls -l
-          cat Dockerfile
-          docker version
-          docker info
+    
 
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
